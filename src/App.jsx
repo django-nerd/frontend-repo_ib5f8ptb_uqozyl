@@ -8,6 +8,7 @@ import Specials from './components/Specials'
 import Reservation from './components/Reservation'
 import Contact from './components/Contact'
 import Admin from './components/Admin'
+import Footer from './components/Footer'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -33,14 +34,6 @@ const Nav = () => (
       <Link to="/reservation" className="md:inline-flex hidden px-4 py-2 rounded bg-[#D4AF37] text-black font-medium hover:scale-105 transition-transform">Reserve</Link>
     </div>
   </header>
-)
-
-const Footer = () => (
-  <footer className="mt-16 border-t border-white/10 bg-black/70">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center text-[#F5F3EE]/80 text-sm">
-      © {new Date().getFullYear()} Éclat Dining • Luxury Veg Gourmet • All rights reserved
-    </div>
-  </footer>
 )
 
 function Layout({ children }){
